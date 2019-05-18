@@ -1,0 +1,33 @@
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+
+int array[10],size,j,n,x,i;
+
+cout<< "Enter array size: ";cin>> size;
+cout<<"Enter values: "; 
+
+for (i=0;i<size;i++){
+cin>>array[i];
+}
+cout<<endl;
+for(i=0; i<size; i++)
+{for(j=i+1;j<size;j++){
+	if (array[i]>array[j]){
+	x=array[i];
+	array[i]=array[j];
+	array[j]=x;
+	}
+}
+}
+cout<<"Sorted Numbers: ";
+for(i=0;i<size;i++){
+	cout<<array[i]<<" ";
+}
+
+
+return 0;
+}
