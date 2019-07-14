@@ -23,9 +23,9 @@ for(i=0; i<size; i++)
 	}
 }
 }
-cout<<"Sorted Numbers: ";
+cout<<"Sorted Numbers: "<<endl;
 for(i=0;i<size;i++){
-	cout<<array[i]<<" ";
+	cout<<array[i]<<" "<<endl;
 }
 
 
